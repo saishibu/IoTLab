@@ -38,11 +38,3 @@ temp=temp.replace("temp=","").replace("'C\n","")
 #print temp
 data={'time':unix_secs,'lat':lat,'lon':lon,'speed':speed,'temp':temp}
 print data
-conn.close()
-print "GPS Updated"
-#except IndexError:
-        # print("To catch an error...")
- #       continue
-#except KeyboardInterrupt:
- #       print("\nProgram stopped.")
-  #      exit()
