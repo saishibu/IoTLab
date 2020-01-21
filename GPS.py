@@ -3,7 +3,6 @@
 #Refer https://github.com/Knio/pynmea2 for installation
 
 import serial,pynmea2,time,datetime
-import nanostation as ns
 import subprocess,os
 from time import mktime
 
