@@ -13,10 +13,7 @@ t = datetime.datetime.now()
 unix_secs = mktime(t.timetuple())
 
 
-ssid=ns.extssid()
-B_ID,CPE_IP=ns.mapip(ssid)
-boat=B_ID
-print CPE_IP
+
 a=1
 while a:
 	rcv = port.readline()
@@ -39,7 +36,7 @@ while a:
 temp=subprocess.check_output(["vcgencmd","measure_temp"])
 temp=temp.replace("temp=","").replace("'C\n","")
 #print temp
-data={'time':unix_secs,'BOAT':boat,'lat':lat,'lon':lon,'speed':speed,'temp':temp}
+data={'time':unix_secs,'lat':lat,'lon':lon,'speed':speed,'temp':temp}
 print data
 conn.close()
 print "GPS Updated"
