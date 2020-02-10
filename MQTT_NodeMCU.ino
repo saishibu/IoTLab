@@ -40,7 +40,6 @@ void setup() {
       delay(2000);
       Serial.println("Reset");
       delay(1000);
-      resetFunc();
 
     }
   }
