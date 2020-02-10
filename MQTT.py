@@ -20,7 +20,7 @@ print("Process started at: " +str(mypid))
 client_uniq = "pubclient_"+str(mypid)
 mqttclient = paho.Client(client_uniq, False) #nocleanstart
 mqttclient.connect(broker, port, 60)
-mqttclient.subscribe("dispenser/#")
+mqttclient.subscribe("IOT/#")
 
 def test(client, userdata, message):
 	payload=message.payload.decode()
